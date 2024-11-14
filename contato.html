@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Rox Melo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="./index.html">
+            <img class="cabecalho__imagem" src="./assets/images/logo.png" alt="Logo com o nome Rox Melo">
+        </a>
+        <nav class="cabecalho__menu">
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a class="menu__link" href="./sobre-mim.html">SOBRE MIM</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./experiencia.html">EXPERIÊNCIA</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./projetos.html">PROJETOS</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="cabecalho__link" href="./contato.html">Contato</a>
+    </header>
+    <main class="container__principal">
+        <div class="container__menor">
+            <form class="contato__formulario">
+                <h2 class="container__titulo">Entre em contato comigo!</h2>
+                <div class="contato__linha">
+                    <div class="contato__campo">
+                        <input class="contato__efeito" type="text" name="nome" id="nome" placeholder="">
+                        <label for="nome">Nome</label>
+                        <span class="focus-border"><i></i></span>
+                    </div>
+                    <div class="contato__campo">
+                        <input class="contato__efeito" type="text" name="telefone" id="telefone" placeholder="">
+                        <label for="telefone">Telefone</label>
+                        <span class="focus-border"><i></i></span>
+                    </div>
+                </div>
+                <div class="contato__campo">
+                    <input class="contato__efeito" type="text" name="email" id="email" placeholder="">
+                    <label for="email">Email</label>
+                    <span class="focus-border"><i></i></span>
+                </div>
+                <div class="contato__campo">
+                    <textarea class="contato__efeito" rows="5" name="mensagem" id="mensagem" placeholder=""></textarea>
+                    <label for="mensagem">Mensagem</label>
+                    <span class="focus-border"><i></i></span>
+                </div>
+                <button class="cabecalho__link contato__botao">Enviar</button>
+            </form>
+        </div>
+        <div class="container__menor">
+            <div class="card__contato">
+                <img class="card__imagem" src="./assets/images/icons/linkedin.png" alt="Logo linkedin">
+                <div class="card__texto">
+                    <p class="card__descricao">Vamos nos conectar?</p>
+                    <a class="card__link" href="https://www.linkedin.com/in/rozangela-peixoto-6a0186285/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="card__contato">
+                <img class="card__imagem" src="./assets/images/icons/github.png" alt="Logo github">
+                <div class="card__texto">
+                    <p class="card__descricao">Veja meus códigos aqui!</p>
+                    <a class="card__link" href="https://github.com/RozangelaPeixoto" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="card__contato">
+                <img class="card__imagem" src="./assets/images/icons/email.png" alt="Logo email">
+                <div class="card__texto">
+                    <p class="card__descricao">Email</p>
+                    <p class="card__info">roxpmelo@gmail.com</p>
+                </div>
+            </div>
+            <div class="card__contato">
+                <img class="card__imagem" src="./assets/images/icons/pin.png" alt="Logo pin">
+                <div class="card__texto">
+                    <p class="card__descricao">Localização</p>
+                    <p class="card__info">Maracanaú, Ceará</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
