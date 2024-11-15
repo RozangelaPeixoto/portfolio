@@ -71,7 +71,7 @@ header, main{
 
 /* INDEX E SOBRE MIM */
 .container__principal{
-    height: 100vh;
+    height: calc(100vh + 80px);
 }
 .principal--flex{
     display: flex;
@@ -79,6 +79,9 @@ header, main{
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+}
+.flex--around{
+    justify-content: space-around;
 }
 .container__maior{
     width: 50%;
@@ -128,11 +131,6 @@ header, main{
     font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: 600;
 }
-.titulo--center{
-    text-align: center;
-    padding-top: calc(100vh - 490px);
-    padding-bottom: 2rem;
-}
 .container__card{
     padding: 1rem;
     border: 2px solid var(--bg-cinza);
@@ -155,10 +153,10 @@ header, main{
     justify-content: center;
 }
 .titulo--center{
-    padding: 4rem 0 2rem;
+    padding-bottom: 2rem;
 }
 .projeto__imagem{
-    width: 350px;
+    width: clamp(250px, 35vw, 400px);
     height: 350px;
     border-radius: 25px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -307,4 +305,8 @@ input, label, textarea, button{
   font-size: 12px;
   color:  var(--bt-padrao);
   transition: 0.3s;
+}
+/*RESPONSIVIDADE*/
+@media screen and (max-width:768px) {
+    
 }
