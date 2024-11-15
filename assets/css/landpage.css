@@ -148,6 +148,15 @@ header, main{
 }
 
 /* PROJETOS */
+.container__projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo--center{
+    padding: 4rem 0 2rem;
+}
 .projeto__imagem{
     width: 350px;
     height: 350px;
