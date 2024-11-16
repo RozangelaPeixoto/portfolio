@@ -306,6 +306,9 @@ input, label, textarea, button{
   color:  var(--bt-padrao);
   transition: 0.3s;
 }
+.cards--mobile{
+    display: none;
+}
 /*RESPONSIVIDADE*/
 @media screen and (max-width:767px) {
     .container__principal{
@@ -314,6 +317,9 @@ input, label, textarea, button{
     }
     .container__maior, .container__menor{
         width: 100%;
+    }
+    .flex--around{
+        padding-bottom: 3.5rem;
     }
 }
 @media screen and (max-width:425px) {
@@ -341,5 +347,13 @@ input, label, textarea, button{
     }
     .container__titulo{
         text-align: center;
+    }
+    .cards--desktop{
+        display: none;
+    }
+    .cards--mobile{
+        display: flex;
+        justify-content: space-evenly;
+        height: 80px;
     }
 }
