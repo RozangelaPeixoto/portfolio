@@ -30,7 +30,6 @@ header, main{
 }
 /* HEADER E MENU */
 .cabecalho{
-    height: var(--tamanho-menu);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +63,7 @@ header, main{
     transition: all ease 500ms;
     border: none;
     cursor: pointer;
+    display: inline-block;
 }
 .cabecalho__link:hover{
     background: var(--bt-hover);
@@ -211,12 +211,12 @@ input, label, textarea, button{
     display: flex;
     flex-direction: column;
     gap:2rem;
-    min-width: 350px;
+    min-width: 300px;
     justify-content: center;
 }
 .contato__linha{
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
 }
 .contato__linha .contato__campo{
     width: 45%;
@@ -307,6 +307,39 @@ input, label, textarea, button{
   transition: 0.3s;
 }
 /*RESPONSIVIDADE*/
-@media screen and (max-width:768px) {
-    
+@media screen and (max-width:767px) {
+    .container__principal{
+        height: auto;
+        padding-top: 6rem;
+    }
+    .container__maior, .container__menor{
+        width: 100%;
+    }
+}
+@media screen and (max-width:425px) {
+    .cabecalho{
+        flex-wrap: wrap;
+        padding-bottom: 8px;
+        gap: 0.5rem;
+    }
+    .cabecalho__link{
+        order:1;
+    }
+    .cabecalho__menu{
+        order: 2;
+        flex-grow: 1;
+    }
+    .menu__lista{
+        font-size: .875rem;
+        justify-content: space-between;
+    }
+    .menu__link{
+        padding-inline: 0;
+    }
+    .projeto__imagem, .contato__formulario{
+        width: 100%;
+    }
+    .container__titulo{
+        text-align: center;
+    }
 }
