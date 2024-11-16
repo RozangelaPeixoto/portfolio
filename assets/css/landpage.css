@@ -4,7 +4,6 @@
     --ft-destaque: #ff79c6;
     --bt-padrao: #6272a4;
     --bt-hover: #8b9edb;
-    --tamanho-menu: 80px;
 }
 *{
     box-sizing: border-box;
@@ -33,10 +32,11 @@ header, main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
     background-color: var(--bg-cinza);
+    width: 100%;
 }
 .cabecalho__imagem{
     height: 56px;
@@ -71,7 +71,7 @@ header, main{
 
 /* INDEX E SOBRE MIM */
 .container__principal{
-    height: calc(100vh + 80px);
+    height: calc(100vh + 56px);
 }
 .principal--flex{
     display: flex;
