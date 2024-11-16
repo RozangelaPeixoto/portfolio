@@ -7,44 +7,191 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/landpage.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <script src="./assets/js/main.js" defer></script>
     <!-- Rozangela Peixoto - RU4926583 -->
 </head>
 <body>
     <header class="cabecalho">
-        <a href="./index.html">
-            <img class="cabecalho__imagem" src="./assets/images/logo.png" alt="Logo com o nome Rox Melo">
-        </a>
+        <img class="cabecalho__imagem" src="./assets/images/logo.png" alt="Logo com o nome Rox Melo">
         <nav class="cabecalho__menu">
             <ul class="menu__lista">
                 <li class="menu__item">
-                    <a class="menu__link" href="./sobre-mim.html">SOBRE MIM</a>
+                    <a class="menu__link" href="#introducao">HOME</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="./experiencia.html">EXPERIÊNCIA</a>
+                    <a class="menu__link" href="#sobre-mim">SOBRE MIM</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="./projetos.html">PROJETOS</a>
+                    <a class="menu__link" href="#experiencia">EXPERIÊNCIA</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projetos">PROJETOS</a>
                 </li>
             </ul>
         </nav>
-        <a class="cabecalho__link" href="./contato.html">Contato</a>
+        <a class="cabecalho__link" href="#contato">Contato</a>
     </header>
-    <main class="container__principal">
-        <div class="container__maior">
-            <p class="texto__indroducao"> Olá, eu sou a</p>
-            <h1 class="texto__nome">ROZANGELA PEIXOTO</h1>
-            <h2 class="texto__funcao">Desenvolvedora Full Stack</h2>
-            <p class="texto__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend lorem a purus tincidunt, a blandit dolor ornare. Proin id ullamcorper justo. Morbi vel turpis quis justo tincidunt rutrum quis ac dolor. Cras est risus, porttitor a ligula sit amet, varius blandit lectus. Nulla fermentum mollis tortor, a blandit sapien lacinia vel.</p>
-            <div class="texto__botoes">
-                <a class="cabecalho__link" href="https://github.com/RozangelaPeixoto" target="_blank">Github</a>
-                <a class="menu__link" href="./assets/docs/curriculo.pdf" target="_blank">Download CV</a>
+    <main>
+        <section id="introducao" class="container__principal principal--flex">
+            <div class="container__maior">
+                <p class="texto__indroducao"> Olá, eu sou a</p>
+                <h1 class="texto__nome">ROZANGELA PEIXOTO</h1>
+                <h2 class="texto__funcao">Desenvolvedora Full Stack</h2>
+                <p class="texto__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend lorem a purus tincidunt, a blandit dolor ornare. Proin id ullamcorper justo. Morbi vel turpis quis justo tincidunt rutrum quis ac dolor. Cras est risus, porttitor a ligula sit amet, varius blandit lectus. Nulla fermentum mollis tortor, a blandit sapien lacinia vel.</p>
+                <div class="texto__botoes">
+                    <a class="cabecalho__link" href="https://github.com/RozangelaPeixoto" target="_blank">Github</a>
+                    <a class="menu__link" href="./assets/docs/curriculo.pdf" target="_blank">Download CV</a>
+                </div>
             </div>
-        </div>
-        <div class="container__menor">
-            <img class="container__foto imagem--borda" src="./assets/images/perfil.png" alt="Foto da Rozangela">
-        </div>
+            <div class="container__menor">
+                <img class="container__foto imagem--borda" src="./assets/images/perfil.png" alt="Foto da Rozangela">
+            </div>
+        </section>
+        <section id="sobre-mim" class="container__principal principal--flex">
+            <div class="container__menor">
+                <img class="container__foto" src="./assets/images/programando.svg" alt="Mãos digitando num teclado">
+            </div>
+            <div class="container__maior">
+                <p class="texto__indroducao">Um pouco</p>
+                <h1 class="texto__nome">Sobre mim</h1>
+                <p class="texto__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend lorem a purus tincidunt, a blandit dolor ornare. Proin id ullamcorper justo. Morbi vel turpis quis justo tincidunt rutrum quis ac dolor. Cras est risus, porttitor a ligula sit amet, varius blandit lectus. Nulla fermentum mollis tortor, a blandit sapien lacinia vel.</p>
+                <div class="texto__botoes">
+                    <a class="cabecalho__link" href="https://github.com/RozangelaPeixoto" target="_blank">Github</a>
+                    <a class="menu__link" href="./assets/docs/curriculo.pdf" target="_blank">Download CV</a>
+                </div>
+            </div>
+        </section>
+        <section id="experiencia" class="container__principal principal--flex">
+            <div class="container__menor">
+                <h2 class="container__titulo">Minha Experiência</h2>
+                <div class="container__card">
+                    <p class="card__periodo">NOV/24 ~ ABR/25</p>
+                    <h3 class="card__funcao">Estágio FullStack</h3>
+                    <p class="card__descricao">Compass UOL</p>
+                </div>
+                <div class="container__card">
+                    <p class="card__periodo">JAN/12 ~ DEZ/16</p>
+                    <h3 class="card__funcao">Desenvolvedora Backend</h3>
+                    <p class="card__descricao">Jornal O POVO</p>
+                </div>
+            </div>
+            <div class="container__menor">
+                <h2 class="container__titulo">Minha Educação</h2>
+                <div class="container__card">
+                    <p class="card__periodo">JUN/24 ~ NOV/26</p>
+                    <h3 class="card__funcao">Graduação ADS</h3>
+                    <p class="card__descricao">UNINTER</p>
+                </div>
+                <div class="container__card">
+                    <p class="card__periodo">MAI/23 ~ JUN/24</p>
+                    <h3 class="card__funcao">Curso FullStack Python</h3>
+                    <p class="card__descricao">Infinity School</p>
+                </div>
+            </div>
+        </section>
+        <section id="projetos" class="container__principal container__projeto">
+            <h2 class="container__titulo titulo--center">Projetos</h2>
+            <div class="principal--flex">
+                <div class="container__projeto">
+                    <a class="projeto__link" href="https://searchcs50.vercel.app/" target="_blank">
+                        <img class="projeto__imagem projeto__imagem--contain" src="./assets/images/projeto1.png" alt="">
+                        <h3 class="projeto__titulo">Clone Google - Curso Havard</h3>
+                    </a>
+                </div>
+                <div class="container__projeto">
+                    <a class="projeto__link" href="https://qrcode-component-gamma.vercel.app/" target="_blank">
+                        <img class="projeto__imagem  projeto__imagem--cover" src="./assets/images/projeto2.png" alt="">
+                        <h3 class="projeto__titulo">QRCode - Frontend Mentor</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="container__principal principal--flex flex--around">
+            <div class="container__menor">
+                <form class="contato__formulario">
+                    <h2 class="container__titulo">Entre em contato comigo!</h2>
+                    <div class="contato__linha">
+                        <div class="contato__campo">
+                            <input class="contato__efeito" type="text" name="nome" id="nome" placeholder="">
+                            <label for="nome">Nome</label>
+                            <span class="focus-border"><i></i></span>
+                        </div>
+                        <div class="contato__campo">
+                            <input class="contato__efeito" type="text" name="telefone" id="telefone" placeholder="">
+                            <label for="telefone">Telefone</label>
+                            <span class="focus-border"><i></i></span>
+                        </div>
+                    </div>
+                    <div class="contato__campo">
+                        <input class="contato__efeito" type="text" name="email" id="email" placeholder="">
+                        <label for="email">Email</label>
+                        <span class="focus-border"><i></i></span>
+                    </div>
+                    <div class="contato__campo">
+                        <textarea class="contato__efeito" rows="5" name="mensagem" id="mensagem" placeholder=""></textarea>
+                        <label for="mensagem">Mensagem</label>
+                        <span class="focus-border"><i></i></span>
+                    </div>
+                    <button class="cabecalho__link contato__botao">Enviar</button>
+                </form>
+            </div>
+            <div class="container__menor cards--desktop">
+                <div class="card__contato">
+                    <img class="card__imagem" src="./assets/images/icons/linkedin.png" alt="Logo linkedin">
+                    <div class="card__texto">
+                        <p class="card__descricao">Vamos nos conectar?</p>
+                        <a class="card__link" href="https://www.linkedin.com/in/rozangela-peixoto-6a0186285/" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="card__contato">
+                    <img class="card__imagem" src="./assets/images/icons/github.png" alt="Logo github">
+                    <div class="card__texto">
+                        <p class="card__descricao">Veja meus códigos aqui!</p>
+                        <a class="card__link" href="https://github.com/RozangelaPeixoto" target="_blank">Github</a>
+                    </div>
+                </div>
+                <div class="card__contato">
+                    <img class="card__imagem" src="./assets/images/icons/email.png" alt="Logo email">
+                    <div class="card__texto">
+                        <p class="card__descricao">Email</p>
+                        <p class="card__info">roxpmelo@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card__contato">
+                    <img class="card__imagem" src="./assets/images/icons/pin.png" alt="Logo pin">
+                    <div class="card__texto">
+                        <p class="card__descricao">Localização</p>
+                        <p class="card__info">Maracanaú, Ceará</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__menor cards--mobile">
+                <div class="card__contato">
+                    <a class="card__link" href="https://www.linkedin.com/in/rozangela-peixoto-6a0186285/" target="_blank">
+                        <img class="card__imagem" src="./assets/images/icons/linkedin.png" alt="Logo linkedin">
+                    </a>
+                </div>
+                <div class="card__contato">
+                    <a class="card__link" href="https://github.com/RozangelaPeixoto" target="_blank">
+                        <img class="card__imagem" src="./assets/images/icons/github.png" alt="Logo github">
+                    </a>
+                </div>
+                <div class="card__contato">
+                    <a href="mailto:roxpmelo@gmail.com" target="_blank">
+                        <img class="card__imagem" src="./assets/images/icons/email.png" alt="Logo email">
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Rozangela Peixoto</p>
+    </footer>
 </body>
 </html>
+
+
+
+
