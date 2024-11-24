@@ -12,6 +12,7 @@
 }
 html{
     scroll-behavior: smooth;
+    position: relative;
 }
 body{
     background: var(--bg-cinza);
@@ -19,7 +20,8 @@ body{
     width: 100%;
     font-family: "Work Sans", sans-serif;
     color: var(--ft-principal);
-    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -34,9 +36,10 @@ header, main{
     align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 1;
     background-color: var(--bg-cinza);
-    width: 100%;
+    width: 100vw;
 }
 .cabecalho__imagem{
     height: 56px;
@@ -71,7 +74,7 @@ header, main{
 
 /* INDEX E SOBRE MIM */
 .container__principal{
-    height: calc(100vh + 56px);
+    height: 100vh;
 }
 .principal--flex{
     display: flex;
@@ -80,14 +83,14 @@ header, main{
     gap: 2rem;
     flex-wrap: wrap;
 }
-.flex--around{
-    justify-content: space-around;
-}
 .container__maior{
     width: 50%;
 }
 .container__menor{
     width: 40%;
+}
+.foto__center{
+    text-align: center;
 }
 .texto__indroducao{
     color: var(--ft-destaque);
@@ -102,6 +105,14 @@ header, main{
 }
 .texto__descricao{
     margin-top: .75rem ;
+    line-height: 1.5rem;
+}
+.descricao__titulo{
+    font-weight: 600;
+}
+.descricao__lista{
+    list-style: none;
+    padding-left: 2rem;
 }
 .texto__botoes{
     margin-top: 2rem;
@@ -127,6 +138,11 @@ header, main{
 }
 
 /* EXPERIENCIA */
+.container__experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container__titulo{
     font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: 600;
@@ -207,16 +223,14 @@ input, label, textarea, button{
 }
 .contato__formulario{
     height: 70vh;
-    width: 35vw;
     display: flex;
     flex-direction: column;
-    gap:2rem;
-    min-width: 300px;
+    gap: 2rem;
     justify-content: center;
 }
 .contato__linha{
     display: flex;
-    gap: 2rem;
+    gap: 10%;
 }
 .contato__linha .contato__campo{
     width: 45%;
@@ -312,8 +326,13 @@ input, label, textarea, button{
 /*RESPONSIVIDADE*/
 @media screen and (max-width:767px) {
     .container__principal{
-        height: auto;
         padding-top: 6rem;
+    }
+    .container__principal:last-child{
+        padding-top: 0;
+    }
+    .container__principal:nth-child(4){
+        padding-top: 10rem;
     }
     .container__maior, .container__menor{
         width: 100%;
