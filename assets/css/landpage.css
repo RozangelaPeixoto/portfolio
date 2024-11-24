@@ -324,6 +324,14 @@ input, label, textarea, button{
     display: none;
 }
 /*RESPONSIVIDADE*/
+@media screen and (max-width:1008px) {
+    #sobre-mim .container__menor{
+        display: none;
+    }
+    #sobre-mim .container__maior{
+        width: 80%;
+    }
+}
 @media screen and (max-width:767px) {
     .container__principal{
         padding-top: 6rem;
