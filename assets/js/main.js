@@ -1,3 +1,6 @@
+// O objetivo desse código é verificar se o input do fomulário foi preenchido
+// A função é chamada no focusout dos campos do formulário
+// Se preenchido uma classe será adicionada para mudar o estilo do elemento
 const inputs = document.querySelectorAll('.contato__efeito');
 
 for (const input of inputs) {

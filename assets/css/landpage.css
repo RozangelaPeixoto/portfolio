@@ -248,6 +248,7 @@ input, label, textarea, button{
 .contato__botao{
     width: 180px;
 }
+/* EFEITO QUE EU COPIEI DA NET, MAS AJUSTEI AO MEU LAYOUT */
 .contato__efeito {
   border: 1px solid #ccc;
   padding: 10px 14px;
@@ -320,6 +321,7 @@ input, label, textarea, button{
   color:  var(--bt-padrao);
   transition: 0.3s;
 }
+/* FIM DO EFEITO */
 .cards--mobile{
     display: none;
 }
