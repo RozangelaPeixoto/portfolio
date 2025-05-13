@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Rox Melo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/landpage.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <script src="./assets/js/main.js" defer></script>
     <!-- Rozangela Peixoto - RU4926583 -->
 </head>
+
 <body>
     <header class="cabecalho">
         <img class="cabecalho__imagem" src="./assets/images/logo.png" alt="Logo com o nome Rox Melo">
@@ -27,6 +30,9 @@
                     <a class="menu__link" href="#experiencia">EXPERIÊNCIA</a>
                 </li>
                 <li class="menu__item">
+                    <a class="menu__link" href="#certificacoes">CERTIFICADOS</a>
+                </li>
+                <li class="menu__item">
                     <a class="menu__link" href="#projetos">PROJETOS</a>
                 </li>
             </ul>
@@ -39,7 +45,9 @@
                 <p class="texto__indroducao"> Olá, eu sou a</p>
                 <h1 class="texto__nome">ROZANGELA PEIXOTO</h1>
                 <h2 class="texto__funcao">Desenvolvedora FullStack</h2>
-                <p class="texto__descricao">Profissional motivada e em constante evolução, apaixonada por programação e resolução de problemas. Tenho experiência em desenvolvimento fullstack e busco sempre alinhar minhas competências técnicas com foco em resultados e inovação.</p>
+                <p class="texto__descricao">Profissional motivada e em constante evolução, apaixonada por programação e
+                    resolução de problemas. Tenho experiência em desenvolvimento fullstack e busco sempre alinhar minhas
+                    competências técnicas com foco em resultados e inovação.</p>
                 <div class="texto__botoes">
                     <a class="cabecalho__link" href="https://github.com/RozangelaPeixoto" target="_blank">Github</a>
                     <a class="menu__link" href="./assets/docs/curriculo.pdf" target="_blank">Download CV</a>
@@ -62,12 +70,15 @@
                         <li>🎓 Formação: Estudante de Análise e Desenvolvimento de Software na UNINTER.</li>
                         <li>🏅 Valorizo aprendizado contínuo, colaboração e eficiência.</li>
                         <li>⚡ Fato curioso: Amo resolver quebra-cabeças.</li>
-                        <li>📖 Hobbies: Ler e buscar novas metodologias e ferramentas para otimizar a gestão de tempo e organização de tarefas</li>
+                        <li>📖 Hobbies: Ler e buscar novas metodologias e ferramentas para otimizar a gestão de tempo e
+                            organização de tarefas</li>
                     </ul>
                     <h3 class="descricao__titulo">💻 Habilidades e Competências</h3>
                     <ul class="descricao__lista">
-                        <li>🛠️ Técnicas: Python, JavaScript, Java, MySQL, Node.js, Django, Spring Boot, React, AWS, Git, Github, Figma, Scrum, Trello</li>
-                        <li>🤝 Pessoais: Trabalho em equipe, organização de tarefas e processos, gestão de prazos e entregas, pensamento analítico e crítico.</li>
+                        <li>🛠️ Técnicas: Python, JavaScript, Java, MySQL, Node.js, Spring Boot, React, AWS, Git,
+                            Github, Figma, Scrum, Trello</li>
+                        <li>🤝 Pessoais: Trabalho em equipe, organização de tarefas e processos, gestão de prazos e
+                            entregas, pensamento analítico e crítico.</li>
                     </ul>
                 </div>
             </div>
@@ -76,7 +87,7 @@
             <div class="container__menor container__experiencia">
                 <h2 class="container__titulo">Minha Experiência</h2>
                 <div class="container__card">
-                    <p class="card__periodo">NOV/24 ~ ATUAL</p>
+                    <p class="card__periodo">NOV/24 ~ ABR/25</p>
                     <h3 class="card__funcao">Estágio FullStack</h3>
                     <p class="card__descricao">Compass UOL</p>
                 </div>
@@ -100,30 +111,150 @@
                 </div>
             </div>
         </section>
-        <section id="projetos" class="container__principal container__projeto">
-            <h2 class="container__titulo titulo--center">Projetos</h2>
-            <div class="principal--flex">
-                <div class="container__projeto">
-                    <a class="projeto__link" href="https://searchcs50.vercel.app/" target="_blank">
-                        <img class="projeto__imagem projeto__imagem--contain" src="./assets/images/projeto1.png" alt="">
-                        <h3 class="projeto__titulo">Clone Google - Curso Havard</h3>
-                    </a>
-                </div>
-                <div class="container__projeto">
-                    <a class="projeto__link" href="https://qrcode-component-gamma.vercel.app/" target="_blank">
-                        <img class="projeto__imagem  projeto__imagem--cover" src="./assets/images/projeto2.png" alt="">
-                        <h3 class="projeto__titulo">QRCode - Frontend Mentor</h3>
-                    </a>
-                </div>
-            </div>
+        <section id="certificacoes" class="container__principal container__projeto"
+            aria-labelledby="titulo-certificacoes">
+            <h2 id="titulo-certificacoes" class="container__titulo titulo--center">Certificações</h2>
+
+            <ul class="principal--flex certificacoes__flex">
+                <li class="container__projeto certificacao">
+                    <figure>
+                        <img class="certificado__imagem certificado__imagem--grande projeto__imagem--fill"
+                            src="./assets/docs/aws_certificado.png" alt="Certificação da AWS">
+                    </figure>
+                </li>
+
+                <li class="container__projeto certificacao">
+                    <figure>
+                        <img class="certificado__imagem certificado__imagem--grande projeto__imagem--contain"
+                            src="./assets/docs/ingles_certificado.png" alt="Certificado de proficiência em inglês">
+                    </figure>
+                </li>
+
+                <li class="container__projeto certificacao">
+                    <figure>
+                        <img class="certificado__imagem certificado__imagem--pequena projeto__imagem--contain"
+                            src="./assets/docs/genai_certificado.png" alt="Certificação em GenAI">
+                    </figure>
+                </li>
+
+                <li class="container__projeto certificacao">
+                    <figure>
+                        <img class="certificado__imagem certificado__imagem--pequena projeto__imagem--contain"
+                            src="./assets/docs/ai_assisted_certificado.png" alt="Certificação em IA Assistida">
+                    </figure>
+                </li>
+            </ul>
         </section>
+        <section id="projetos" class="container__principal container__projeto" aria-labelledby="titulo-projetos">
+            <h2 id="titulo-projetos" class="container__titulo titulo--center">Projetos</h2>
+
+            <ul class="principal--flex">
+                <li class="container__projeto">
+                    <article class="projeto">
+                        <header>
+                            <h3 class="projeto__titulo">Clone Google - Curso Harvard</h3>
+                        </header>
+                        <a class="projeto__link" href="https://searchcs50.vercel.app/" target="_blank"
+                            aria-label="Acessar projeto Clone Google">
+                            <img class="projeto__imagem projeto__imagem--contain"
+                                src="./assets/images/projetos/projeto1.png" alt="Imagem do projeto Clone do Google">
+                        </a>
+                        <div class="projeto__info">
+                            <p class="projeto__descricao">Projeto desenvolvido no curso CS50 de Harvard, replicando a
+                                interface de busca do Google.</p>
+                            <footer class="projeto__botoes">
+                                <a href="https://searchcs50.vercel.app/" target="_blank">Site</a>
+                                <a href="https://github.com/RozangelaPeixoto/searchcs50" target="_blank">Repositório</a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li class="container__projeto">
+                    <article class="projeto">
+                        <header>
+                            <h3 class="projeto__titulo">QRCode - Frontend Mentor</h3>
+                        </header>
+                        <a class="projeto__link" href="https://qrcode-component-gamma.vercel.app/" target="_blank"
+                            aria-label="Acessar projeto QRCode">
+                            <img class="projeto__imagem projeto__imagem--cover"
+                                src="./assets/images/projetos/projeto2.png" alt="Imagem do projeto de QRCode">
+                        </a>
+                        <div class="projeto__info">
+                            <p class="projeto__descricao">Componente de QRCode proposto pelo site Frontend Mentor. Foco
+                                em responsividade e acessibilidade.</p>
+                            <footer class="projeto__botoes">
+                                <a href="https://qrcode-component-gamma.vercel.app/" target="_blank">Site</a>
+                                <a href="https://github.com/RozangelaPeixoto/qrcode_component"
+                                    target="_blank">Repositório</a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li class="container__projeto">
+                    <article class="projeto">
+                        <header>
+                            <h3 class="projeto__titulo">Bank Java</h3>
+                        </header>
+                        <a class="projeto__link" href="#" target="_blank" aria-label="Acessar projeto Bank Java">
+                            <img class="projeto__imagem projeto__imagem--cover"
+                                src="./assets/images/projetos/projeto3.png" alt="Imagem do projeto Bank Java">
+                        </a>
+                        <div class="projeto__info">
+                            <p class="projeto__descricao">Projeto para desenvolver um banco em Java usando JPA/Hibernate
+                                e MySQL.</p>
+                            <footer class="projeto__botoes">
+                                <a href="#" target="_blank">Repositório</a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li class="container__projeto">
+                    <article class="projeto">
+                        <header>
+                            <h3 class="projeto__titulo">Teddy Shop</h3>
+                        </header>
+                        <a class="projeto__link" href="https://rozangelapeixoto.github.io/teddy-shop/" target="_blank"
+                            aria-label="Acessar projeto Teddy Shop">
+                            <img class="projeto__imagem projeto__imagem--cover"
+                                src="./assets/images/projetos/projeto4.png" alt="Imagem do projeto Teddy Shop">
+                        </a>
+                        <div class="projeto__info">
+                            <p class="projeto__descricao">Landpage criada a partir de um figma com HTML e CSS puro.</p>
+                            <footer class="projeto__botoes">
+                                <a href="https://rozangelapeixoto.github.io/teddy-shop/" target="_blank">Site</a>
+                                <a href="https://github.com/RozangelaPeixoto/teddy-shop" target="_blank">Repositório</a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li class="container__projeto">
+                    <article class="projeto">
+                        <header>
+                            <h3 class="projeto__titulo">Cofrinho</h3>
+                        </header>
+                        <a class="projeto__link" href="#" target="_blank" aria-label="Acessar projeto Cofrinho">
+                            <img class="projeto__imagem projeto__imagem--cover"
+                                src="./assets/images/projetos/projeto5.png" alt="Imagem do projeto Cofrinho">
+                        </a>
+                        <div class="projeto__info">
+                            <p class="projeto__descricao">Projeto para desenvolver um cofrinho de moedas em Java.</p>
+                            <footer class="projeto__botoes">
+                                <a href="#" target="_blank">Repositório</a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
         <section id="contato" class="container__principal principal--flex">
             <div class="container__menor cards--desktop">
                 <div class="card__contato">
                     <img class="card__imagem" src="./assets/images/icons/linkedin.png" alt="Logo linkedin">
                     <div class="card__texto">
                         <p class="card__descricao">Vamos nos conectar?</p>
-                        <a class="card__link" href="https://www.linkedin.com/in/rozangela-peixoto-6a0186285/" target="_blank">LinkedIn</a>
+                        <a class="card__link" href="https://www.linkedin.com/in/rozangela-peixoto-6a0186285/"
+                            target="_blank">LinkedIn</a>
                     </div>
                 </div>
                 <div class="card__contato">
@@ -169,7 +300,8 @@
                         <span class="focus-border"><i></i></span>
                     </div>
                     <div class="contato__campo">
-                        <textarea class="contato__efeito" rows="5" name="mensagem" id="mensagem" placeholder=""></textarea>
+                        <textarea class="contato__efeito" rows="5" name="mensagem" id="mensagem"
+                            placeholder=""></textarea>
                         <label for="mensagem">Mensagem</label>
                         <span class="focus-border"><i></i></span>
                     </div>
@@ -178,7 +310,8 @@
             </div>
             <div class="container__menor cards--mobile">
                 <div class="card__contato">
-                    <a class="card__link" href="https://www.linkedin.com/in/rozangela-peixoto-6a0186285/" target="_blank">
+                    <a class="card__link" href="https://www.linkedin.com/in/rozangela-peixoto-6a0186285/"
+                        target="_blank">
                         <img class="card__imagem" src="./assets/images/icons/linkedin.png" alt="Logo linkedin">
                     </a>
                 </div>
@@ -199,8 +332,5 @@
         <p class="rodape__texto">Desenvolvido por Rozangela Peixoto</p>
     </footer>
 </body>
+
 </html>
-
-
-
-
