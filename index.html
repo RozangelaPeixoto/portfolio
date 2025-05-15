@@ -35,6 +35,9 @@
                 <li class="menu__item">
                     <a class="menu__link" href="#projetos">PROJETOS</a>
                 </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#cursos">CURSOS</a>
+                </li>
             </ul>
         </nav>
         <a class="cabecalho__link" href="#contato">Contato</a>
@@ -117,28 +120,28 @@
 
             <ul class="principal--flex certificacoes__flex">
                 <li class="container__projeto certificacao">
-                    <figure>
+                    <figure class="figure-certificado" data-img="./assets/docs/aws_certificado.png">
                         <img class="certificado__imagem certificado__imagem--grande projeto__imagem--fill"
                             src="./assets/docs/aws_certificado.png" alt="Certificação da AWS">
                     </figure>
                 </li>
 
                 <li class="container__projeto certificacao">
-                    <figure>
+                    <figure class="figure-certificado" data-img="./assets/docs/ingles_certificado.png">
                         <img class="certificado__imagem certificado__imagem--grande projeto__imagem--contain"
                             src="./assets/docs/ingles_certificado.png" alt="Certificado de proficiência em inglês">
                     </figure>
                 </li>
 
                 <li class="container__projeto certificacao">
-                    <figure>
+                    <figure class="figure-certificado" data-img="./assets/docs/genai_certificado.png">
                         <img class="certificado__imagem certificado__imagem--pequena projeto__imagem--contain"
                             src="./assets/docs/genai_certificado.png" alt="Certificação em GenAI">
                     </figure>
                 </li>
 
                 <li class="container__projeto certificacao">
-                    <figure>
+                    <figure class="figure-certificado" data-img="./assets/docs/ai_assisted_certificado.png">
                         <img class="certificado__imagem certificado__imagem--pequena projeto__imagem--contain"
                             src="./assets/docs/ai_assisted_certificado.png" alt="Certificação em IA Assistida">
                     </figure>
@@ -147,7 +150,6 @@
         </section>
         <section id="projetos" class="container__principal container__projeto" aria-labelledby="titulo-projetos">
             <h2 id="titulo-projetos" class="container__titulo titulo--center">Projetos</h2>
-
             <ul class="principal--flex">
                 <li class="container__projeto">
                     <article class="projeto">
@@ -246,6 +248,87 @@
                 </li>
             </ul>
         </section>
+
+        <section id="cursos" class="container__principal container__projeto">
+            <h2 class="container__titulo titulo--center">Cursos</h2>
+
+            <table class="tabela__cursos">
+                <thead>
+                    <tr>
+                        <th scope="col">Curso</th>
+                        <th scope="col">Instrutor</th>
+                        <th scope="col">Carga Horária</th>
+                        <th scope="col">Conclusão</th>
+                        <th scope="col">Certificado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Absolute Beginners Guide to Cyber Security</td>
+                        <td>Alexander Oni</td>
+                        <td>5h</td>
+                        <td>20/11/24</td>
+                        <td>
+                            <button class="btn-certificado" data-img="./assets/images/cursos/uc-cybersecurity.jpg">
+                                Certificado
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Java - Programação Orientada a Objetos</td>
+                        <td>Nelio Alves</td>
+                        <td>54.5h</td>
+                        <td>06/01/25</td>
+                        <td>
+                            <button class="btn-certificado" data-img="./assets/images/cursos/uc-java.jpg">
+                                Certificado
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Understanding HTML and CSS</td>
+                        <td>Anthony Alicea</td>
+                        <td>18h</td>
+                        <td>08/01/25</td>
+                        <td>
+                            <button class="btn-certificado" data-img="./assets/images/cursos/uc-hmtl-css.jpg">
+                                Certificado
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Basics for Beginners</td>
+                        <td>Mosh Hamedani</td>
+                        <td>6.5h</td>
+                        <td>16/01/25</td>
+                        <td>
+                            <button class="btn-certificado" data-img="./assets/images/cursos/uc-javascript.jpg">
+                                Certificado
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Understanding TypeScript</td>
+                        <td>Maximilian Schwarzmuller</td>
+                        <td>15h</td>
+                        <td>15/02/25</td>
+                        <td>
+                            <button class="btn-certificado" data-img="./assets/images/cursos/uc-typescript.jpg">
+                                Certificado
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Modal -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modal-img" src="" alt="Certificado" />
+            </div>
+        </div>
 
         <section id="contato" class="container__principal principal--flex">
             <div class="container__menor cards--desktop">
